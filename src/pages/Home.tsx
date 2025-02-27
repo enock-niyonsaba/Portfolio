@@ -35,14 +35,14 @@ const Home = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
         <div className="text-center">
           <div className="mb-8 relative">
-            <div className="w-40 h-40 rounded-full mx-auto overflow-hidden border-4 border-indigo-500 dark:border-indigo-400 animate-pulse-slow">
+            <div className="w-80 h-80 rounded-full flex items-center justify-center mx-auto overflow-hidden border-4 border-indigo-500 dark:border-indigo-400 animate-pulse-slow">
               <img
-                src="https://your-image-url.com/your-profile-picture.jpg"
+                src="https://znl60kvsawkkhq5d.public.blob.vercel-storage.com/Choosen-nwd4dxvM0AEJrPXYkisZ9rqQO8l9eJ.png"
                 alt="Enock NIYONSABA"
-                className="w-full h-full object-cover"
+                className="w-80 h-80 object-cover"
               />
             </div>
-            <div className="absolute inset-0 w-40 h-40 mx-auto rounded-full border-2 border-indigo-500 opacity-50 animate-pulse" style={{ animationDelay: '-0.5s' }}></div>
+            <div className="absolute inset-0 w-80 h-80 mx-auto rounded-full border-2 border-indigo-500 opacity-50 animate-pulse" style={{ animationDelay: '-0.5s' }}></div>
           </div>
 
           <div className="zigzag-line mx-auto max-w-md"></div>
@@ -55,7 +55,7 @@ const Home = () => {
 
           <div className="animate-on-scroll opacity-0" style={{ animationDelay: '0.2s' }}>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Cybersecurity Enthusiast | Software Engineer | Student Leader
+            Aspiring Cybersecurity Specialist | Software Engineer | Networking & Cyber Defense | Passionate About Combating Cybercrime in Africa
             </p>
           </div>
 
