@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.slide-in {
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+.gradient-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, theme('colors.indigo.500'), transparent);
+}
+
+.zigzag-line {
+  position: relative;
+  height: 8px;
+  margin: 2rem 0;
+}
+
+.zigzag-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(45deg, transparent 33.333%, theme('colors.indigo.500') 33.333%, theme('colors.indigo.500') 66.667%, transparent 66.667%),
+              linear-gradient(-45deg, transparent 33.333%, theme('colors.indigo.500') 33.333%, theme('colors.indigo.500') 66.667%, transparent 66.667%);
+  background-size: 20px 20px;
+  height: 8px;
+  opacity: 0.3;
+}
+
+.bg-gradient-animate {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+.icon-spin {
+  animation: spin 20s linear infinite;
+}
+
+.icon-hover {
+  transition: all 0.3s ease;
+}
+
+.icon-hover:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.2);
+}
+
+.nav-item {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background: theme('colors.indigo.500');
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .overlay {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
