@@ -35,13 +35,13 @@ const Home = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
         <div className="text-center">
           <div className="mb-8 relative">
-            <div className="w-50 h-60 rounded-full mx-auto overflow-hidden border-4 border-indigo-500 dark:border-indigo-400 animate-pulse-slow">
-  <img 
-    src="https://your-image-url.com/your-profile-picture.jpg" 
-    alt="Enock NIYONSABA" 
-    className="w-full h-full object-cover"
-  />
-</div>
+            <div className="w-40 h-40 rounded-full mx-auto overflow-hidden border-4 border-indigo-500 dark:border-indigo-400 animate-pulse-slow">
+              <img
+                src="https://your-image-url.com/your-profile-picture.jpg"
+                alt="Enock NIYONSABA"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="absolute inset-0 w-40 h-40 mx-auto rounded-full border-2 border-indigo-500 opacity-50 animate-pulse" style={{ animationDelay: '-0.5s' }}></div>
           </div>
 
@@ -64,7 +64,6 @@ const Home = () => {
             <div className="relative bg-gray-200 dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden" style={{ paddingTop: '56.25%' }}>
               <iframe
                 className="absolute inset-0 w-full h-full"
-                poster="https://media.istockphoto.com/id/1226991733/photo/successful-motivational-speaker-talking-about-happiness-self-success-empowerment-efficiency.jpg?s=1024x1024&w=is&k=20&c=yvrKoU6u3oICBSpWJHQQJkhNMYTU4Ql6-4-iXG5MX_I="
                 src="https://www.youtube.com/embed/siSAHaFK5oA"
                 title="Elevator Pitch - Enock NIYONSABA"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -79,6 +78,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="icon-hover p-3 bg-gray-800 dark:bg-gray-700 text-white rounded-full hover:bg-gray-700 dark:hover:bg-gray-600 transition-all"
+              title="GitHub"
             >
               <Github className="w-6 h-6" />
             </a>
